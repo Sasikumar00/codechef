@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,x,y,xSum=0,ySum=0,result=0;
+	    cin>>n>>x>>y;
+	    xSum = n*x;
+	    ySum = ((n/2)*y)+((n%2)*x);
+	    result = xSum>ySum ? xSum : ySum;
+	    cout<<result<<endl;
+	}
+}
